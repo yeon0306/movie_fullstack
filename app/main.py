@@ -6,9 +6,17 @@ from recommender import item_based_recommendation,user_based_recommendation
 
 app = FastAPI()
 
+from fastapi.middleware.cors import CORSMiddleware
+origins = ['*', ]
+app.add_middleware(CORSMiddleware,
+                   allow_origins = origins,
+                   allow_credentials = True,
+                   allow_methods = ["*"],
+                   allow_headers = ["*"]
+                   )
 @app.get("/")
 async def root():
-    return {"message": "Hello 박혜연"}
+    return {"message": "Movie Recommender system "}
 
 @app.get("/all")
 async def all_movies():
