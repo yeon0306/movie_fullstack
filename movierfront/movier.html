@@ -24,7 +24,27 @@
 <h3> 그냥 추천 서비스 :all </h3>
 <div style="column-count: 5;" id="alldiv">
 </div>
+
+<hr style="height:10px;border-width:0;color:gray;background-color: gray;">
+
+<hr>
 <h3> 장르 추천 서비스 :genres</h3>
+<div style="column-count: 5;" id="gdiv"></div>
+<select id="genres" class="form-select form-select-lg"> 
+  <option value="Comedy"selected>Comedy</option>
+  <option value="Adventure">Adventure</option>
+  <option value="Animation">Animation</option>
+  <option value="Children">Children</option>
+  <option value="Fantasy">Fantasy</option>
+</select>
+<button type="button" class="btn btn-primary btn-lg" onclick="MovieObject.getgenresMovie()">장르선택</button>
+
+<hr style="height:10px;border-width:0;color:gray;background-color: gray;">
+<h3> 영화기반 추천 item-based </h3>
+
+<hr style="height:10px;border-width:0;color:gray;background-color: gray;">
+<h3> 사용자평점 기준 추천 user-based </h3>
+
 <script src="movier.js"></script>
 </body>
 </html>
