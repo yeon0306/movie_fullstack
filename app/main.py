@@ -16,7 +16,7 @@ app.add_middleware(CORSMiddleware,
                    )
 @app.get("/")
 async def root():
-    return {"message": "Movie Recommender system "}
+    return {"message": "Hello 박혜연"}
 
 @app.get("/all")
 async def all_movies():
