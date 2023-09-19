@@ -65,6 +65,7 @@ let MovieObject = {
 				movielist = response.result
 				console.log(movielist)
 				gdivs = document.getElementById("gdiv")
+				gdivs.innerHTML = '';
 	
 				movielist.forEach(movie => {
 					mdiv = document.createElement("div")
